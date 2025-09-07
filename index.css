@@ -163,6 +163,95 @@ body {
   margin: 0 auto;
 }
 
+/* Skills Section */
+.skills-section {
+  background-color: #111827;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.skill-category {
+  text-align: center;
+}
+
+.skill-category-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 24px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-tag {
+  background-color: #1f2937;
+  color: #d1d5db;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid #374151;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #3b82f6;
+  border-color: #60a5fa;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Services Section */
+.services-section {
+  background-color: #1f2937;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #111827;
+  padding: 32px;
+  border-radius: 12px;
+  border: 2px solid #374151;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.service-item:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 16px;
+}
+
+.service-description {
+  color: #d1d5db;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
 /* Education Section */
 .education-section {
   background-color: #111827;
@@ -281,6 +370,11 @@ body {
 
 .Hublink{
     color: #60a5fa;
+    transition: 0.3s;
+}
+
+.Hublink:hover{
+    color: #2563eb;
 }
 
 .tag {
@@ -319,12 +413,12 @@ body {
   transition: color 0.3s ease;
 }
 
-.contact-link:hover {
+.contact-link:hover , #Hub:hover {
   color: #93c5fd;
 }
 
 .contact-value {
-  color: white;
+  color: #60a5fa;
 }
 
 #Hub{
@@ -332,28 +426,6 @@ body {
     color: #60a5fa;
 }
 
-/* Thank You Section */
-.thank-you-section {
-  background: linear-gradient(135deg, #000000 0%, #111827 50%, #1f2937 100%);
-}
-
-.thank-you-content {
-  text-align: center;
-}
-
-.thank-you-title {
-  font-size: 128px;
-  font-weight: bold;
-  color: #60a5fa;
-  margin-bottom: 32px;
-}
-
-.thank-you-divider {
-  width: 128px;
-  height: 4px;
-  background-color: #3b82f6;
-  margin: 0 auto;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
